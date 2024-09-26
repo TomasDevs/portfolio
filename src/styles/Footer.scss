@@ -1,0 +1,16 @@
+@import "../styles/global";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $text-color;
+  padding: 0.5rem 1rem;
+  border-top: 2px solid $border-color;
+
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
