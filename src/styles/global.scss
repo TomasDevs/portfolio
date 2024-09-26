@@ -1,0 +1,21 @@
+$primary-color: #24292e;
+$secondary-color: #1f2428;
+$text-color: #e1e4e8;
+$text-color-light: #eee;
+$icon-color: #95999d;
+$highlight-color: #f97583;
+$highlight-color-secondary: #b392f0;
+$border-color: #1b1f23;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  background: $primary-color;
+  -webkit-font-smoothing: antialiased;
+}
