@@ -1,0 +1,16 @@
+@import "../styles/global";
+
+.layout {
+  display: flex;
+  height: calc(100vh - 5rem);
+
+  &__inner {
+    width: 100%;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 1rem;
+    background-color: $secondary-color;
+  }
+}

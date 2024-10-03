@@ -1,0 +1,16 @@
+@import "../styles/global";
+
+.explorer-section {
+  padding: 1rem 2rem;
+  border-right: 2px solid $border-color;
+}
+
+.explorer {
+  margin: 1rem 0 0;
+  &__item {
+    margin: 0 0 0.4rem;
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../styles/global";
+
+.tabsbar {
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1rem;
+    border-right: 1px solid $border-color;
+    cursor: pointer;
+  }
+}

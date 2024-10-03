@@ -1,0 +1,35 @@
+@import "../styles/global";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  background-color: $secondary-color;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__item {
+    cursor: pointer;
+    svg {
+      fill: $icon-color;
+      width: 48px;
+      height: auto;
+    }
+
+    &.-contact,
+    &.-articles,
+    &.-home,
+    &.-user {
+      svg {
+        fill: none;
+        stroke: $icon-color;
+      }
+    }
+  }
+}
