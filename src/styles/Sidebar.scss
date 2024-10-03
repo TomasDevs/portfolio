@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   background-color: $secondary-color;
 
   &__menu {
@@ -15,13 +15,6 @@
   }
 
   &__item {
-    cursor: pointer;
-    svg {
-      fill: $icon-color;
-      width: 48px;
-      height: auto;
-    }
-
     &.-contact,
     &.-articles,
     &.-home,
@@ -30,6 +23,34 @@
         fill: none;
         stroke: $icon-color;
       }
+      .-active {
+        svg {
+          fill: none;
+          stroke: $text-color;
+        }
+      }
+    }
+    svg {
+      fill: $icon-color;
+      width: 34px;
+      height: auto;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 0.5rem 1rem;
+
+    &.-active {
+      border-left: 1px solid $highlight-color;
+
+      svg {
+        fill: $text-color;
+      }
+    }
+
+    &:hover {
+      background-color: $border-color;
     }
   }
 }

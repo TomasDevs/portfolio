@@ -2,15 +2,18 @@
 
 .explorer-section {
   padding: 1rem 2rem;
-  border-right: 2px solid $border-color;
+  border-right: 1px solid $border-color;
 }
 
 .explorer {
   margin: 1rem 0 0;
   &__item {
-    margin: 0 0 0.4rem;
+    margin: 0 0 0.5rem;
+  }
+  &__link {
     display: flex;
     gap: 0.5rem;
-    cursor: pointer;
+    color: $text-color;
+    text-decoration: none;
   }
 }
