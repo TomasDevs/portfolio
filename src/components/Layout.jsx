@@ -1,6 +1,7 @@
 import Sidebar from "./Sidebar";
 import Explorer from "./Explorer";
 import Tabsbar from "./Tabsbar";
+import Main from "./Main";
 import "../styles/Layout.scss";
 
 const Layout = () => {
@@ -10,7 +11,7 @@ const Layout = () => {
       <Explorer />
       <div className="layout__inner">
         <Tabsbar />
-        <main className="layout__content"></main>
+        <Main />
       </div>
     </section>
   );
