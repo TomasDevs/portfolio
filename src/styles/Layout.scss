@@ -6,11 +6,11 @@
 
   &__inner {
     width: 100%;
+    background-color: $secondary-color;
   }
 
   &__content {
     width: 100%;
     padding: 1rem;
-    background-color: $secondary-color;
   }
 }

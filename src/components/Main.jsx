@@ -6,10 +6,11 @@ import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 import Articles from "../pages/Articles";
 import Github from "../pages/Github";
+import "../styles/Main.scss";
 
 const Main = () => {
   return (
-    <main className="layout__content">
+    <main className="content">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

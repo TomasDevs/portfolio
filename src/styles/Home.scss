@@ -1,0 +1,45 @@
+@import "../styles/global";
+
+.home-page {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 2rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+
+  pre {
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.line-number {
+  display: inline-block;
+  width: 2rem;
+  color: #75715e;
+  user-select: none;
+}
+
+.keyword {
+  color: #66d9ef;
+}
+
+.variable {
+  color: #a6e22e;
+}
+
+.string {
+  color: #e6db74;
+}
+
+.array {
+  color: #ae81ff;
+}
+
+.function {
+  color: #f92672;
+}
+
+.element {
+  color: #f8f8f2;
+}
