@@ -1,0 +1,25 @@
+.contact-page {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.line-number {
+  color: #75715e;
+  user-select: none;
+}
+
+.selector {
+  color: #569cd6;
+}
+
+.property {
+  color: #dcdcaa;
+}
+
+.value {
+  color: #ce9178;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
