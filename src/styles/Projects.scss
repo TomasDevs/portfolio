@@ -1,0 +1,98 @@
+@import "../styles/global";
+
+.projects-page {
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+}
+
+.project-card {
+  background-color: $primary-color;
+  color: $text-color;
+  border-radius: 10px;
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+
+    &:empty {
+      background: #dcdcdc url("/public/icons/placeholder-image.svg") no-repeat
+        center/30%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  &__content {
+    padding: 0.5rem 1.5rem 2rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #dcdcdc;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    &__tag {
+      display: inline-block;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.8rem;
+      background-color: $secondary-color;
+      color: $text-color;
+      text-transform: lowercase;
+      border-radius: 50px;
+      border: 1px solid $text-color;
+    }
+  }
+
+  &__links {
+    margin-top: 1rem;
+
+    &__link {
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      color: $text-color;
+      background-image: linear-gradient(
+        120deg,
+        $highlight-color 100%,
+        $highlight-color 100%
+      );
+      background-repeat: no-repeat;
+
+      background-size: 100% 0.2em;
+      background-position: 0 88%;
+      text-decoration: none;
+      transition: background-size 0.3s ease;
+
+      &:hover {
+        background-size: 100% 1.4em;
+      }
+    }
+  }
+}

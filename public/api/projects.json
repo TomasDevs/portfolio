@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "The New York Times News App",
+    "description": "Get the latest news from the New York Times with this React-based web application.",
+    "images": {
+      "avif": [
+        "/images/nyt-news-app-480.avif",
+        "/images/nyt-news-app-720.avif"
+      ],
+      "webp": [
+        "/images/nyt-news-app-480.webp",
+        "/images/nyt-news-app-720.webp"
+      ],
+      "jpg": ["/images/nyt-news-app-480.jpg", "/images/nyt-news-app-720.jpg"]
+    },
+    "tags": ["HTML", "CSS", "React", "API", "Node.js", "Express"],
+    "code": "https://github.com/TomasDevs/the-new-york-times-app",
+    "demo": "https://nyt-news-daily.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "description": "This is project 2",
+    "images": {
+      "avif": [
+        "/images/nyt-news-app-480.avif",
+        "/images/nyt-news-app-720.avif"
+      ],
+      "webp": [
+        "/images/nyt-news-app-480.webp",
+        "/images/nyt-news-app-720.webp"
+      ],
+      "jpg": ["/images/nyt-news-app-480.jpg", "/images/nyt-news-app-720.jpg"]
+    },
+    "tags": ["HTML", "SCSS", "React"],
+    "code": "https://github.com",
+    "demo": "https://www.google.com"
+  },
+  {
+    "id": 3,
+    "name": "Project 3",
+    "description": "This is project 3",
+    "images": {
+      "avif": [
+        "/images/nyt-news-app-480.avif",
+        "/images/nyt-news-app-720.avif"
+      ],
+      "webp": [
+        "/images/nyt-news-app-480.webp",
+        "/images/nyt-news-app-720.webp"
+      ],
+      "jpg": ["/images/nyt-news-app-480.jpg", "/images/nyt-news-app-720.jpg"]
+    },
+    "tags": ["HTML", "SCSS", "React"],
+    "code": "https://github.com",
+    "demo": "https://www.google.com"
+  },
+  {
+    "id": 4,
+    "name": "Project 4",
+    "description": "This is project 4",
+    "img": "/images/nyt-news-app.png",
+    "tags": ["HTML", "SCSS", "React"],
+    "code": "https://github.com",
+    "demo": "https://www.google.com"
+  }
+]
