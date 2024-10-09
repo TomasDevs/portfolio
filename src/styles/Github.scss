@@ -1,0 +1,52 @@
+@import "../styles/global";
+
+.github-page {
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+    flex: 1;
+    padding: 1.5rem;
+    background-color: $primary-color;
+    color: $text-color;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-color;
+
+      .repo-card__title {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.repo-card {
+  &__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: $highlight-color;
+  }
+
+  &__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
