@@ -2,7 +2,7 @@
 
 .layout {
   display: flex;
-  height: calc(100vh - 5rem);
+  min-height: calc(100vh - 5rem);
 
   &__inner {
     width: 100%;
