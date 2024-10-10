@@ -6,21 +6,28 @@
   justify-content: space-between;
   align-items: center;
   color: $text-color;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border-top: 1px solid $border-color;
 
   &-list {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.4rem;
     &__item {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.3rem;
+      padding: 0.1rem 0.2rem;
+      border-radius: 4px;
+      cursor: pointer;
       svg {
         fill: $icon-color;
         width: 18px;
         height: auto;
+      }
+
+      &:hover {
+        background-color: #4f4f52;
       }
     }
   }
