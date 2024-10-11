@@ -1,5 +1,4 @@
-import SkillsCard from "./SkillsCard";
-import "../styles/Uses.scss";
+import SkillsCard from "../components/SkillsCard";
 
 const Uses = () => {
   return (
