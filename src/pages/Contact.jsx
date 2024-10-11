@@ -14,15 +14,15 @@ const Contact = () => {
           </a>
           ; {"\n"}
           <span className="line-number">3</span> &nbsp;&nbsp;
-          <span className="property">codepen</span>:{" "}
-          <a href="https://codepen.io/username" className="value">
-            https://codepen.io/username
+          <span className="property">email</span>:{" "}
+          <a href="mailto:user@email.com" className="value">
+            user@email.com
           </a>
           ; {"\n"}
           <span className="line-number">4</span> &nbsp;&nbsp;
-          <span className="property">polywork</span>:{" "}
-          <a href="https://polywork.com/username" className="value">
-            https://polywork.com/username
+          <span className="property">github</span>:{" "}
+          <a href="https://github.com/username" className="value">
+            https://github.com/username
           </a>
           ; {"\n"}
           <span className="line-number">5</span> &nbsp;&nbsp;
@@ -32,18 +32,24 @@ const Contact = () => {
           </a>
           ; {"\n"}
           <span className="line-number">6</span> &nbsp;&nbsp;
-          <span className="property">github</span>:{" "}
-          <a href="https://github.com/username" className="value">
-            https://github.com/username
+          <span className="property">polywork</span>:{" "}
+          <a href="https://polywork.com/username" className="value">
+            https://polywork.com/username
           </a>
           ; {"\n"}
           <span className="line-number">7</span> &nbsp;&nbsp;
-          <span className="property">email</span>:{" "}
-          <a href="mailto:user@email.com" className="value">
-            user@email.com
+          <span className="property">codepen</span>:{" "}
+          <a href="https://codepen.io/username" className="value">
+            https://codepen.io/tomasdevs
           </a>
           ; {"\n"}
-          <span className="line-number">8</span> {"}"}
+          <span className="line-number">8</span> &nbsp;&nbsp;
+          <span className="property">codesandbox</span>:{" "}
+          <a href="https://codesandbox.io/u/username" className="value">
+            https://codesandbox.io/u/username
+          </a>
+          ; {"\n"}
+          <span className="line-number">9</span> {"}"}
         </code>
       </pre>
     </div>
