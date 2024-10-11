@@ -3,7 +3,15 @@ import "../styles/Home.scss";
 const Home = () => {
   const name = "Tomas Stveracek";
   const age = new Date().getFullYear() - 1995;
-  const hobbies = ["Cycling", "Travelling", "Design", "Development"];
+  const skills = [
+    "HTML5",
+    "CSS3",
+    "SASS",
+    "TailwindCSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+  ];
 
   return (
     <div className="home-page">
@@ -28,9 +36,10 @@ const Home = () => {
           {"\n"}
           <span className="line-number">6</span> &nbsp;&nbsp;
           <span className="keyword">const</span>{" "}
-          <span className="variable">hobbies</span> ={" "}
+          <span className="variable">skills</span> ={" "}
           <span className="array">
-            ["Cycling", "Travelling", "Design", "Development"]
+            ["HTML5", "CSS3", "SASS", "TailwindCSS", "JavaScript", "React",
+            "Node.js"]
           </span>
           ; {"\n"}
           <span className="line-number">7</span> &nbsp;&nbsp;
@@ -49,8 +58,8 @@ const Home = () => {
           {"}"} years old.&lt;/<span className="element">p</span>&gt;{"\n"}
           <span className="line-number">11</span>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;
-          <span className="element">p</span>&gt;Hobbies: {"{"}
-          <span className="variable">hobbies</span>.join(", "){"}"}.&lt;/
+          <span className="element">p</span>&gt;Skills: {"{"}
+          <span className="variable">skills</span>.join(", "){"}"}.&lt;/
           <span className="element">p</span>&gt;{"\n"}
           <span className="line-number">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/
           <span className="element">div</span>&gt;{"\n"}
