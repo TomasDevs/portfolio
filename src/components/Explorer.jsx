@@ -41,6 +41,11 @@ const Explorer = () => {
             name="projects.js"
           />
           <ExplorerItem
+            to="/skills"
+            icon="/icons/icon-ts.svg"
+            name="skills.js"
+          />
+          <ExplorerItem
             to="/articles"
             icon="/icons/icon-json.svg"
             name="articles.json"

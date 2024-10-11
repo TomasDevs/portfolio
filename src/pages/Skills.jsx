@@ -1,4 +1,5 @@
 import SkillsCard from "../components/SkillsCard";
+import "../styles/Skills.scss";
 
 const Skills = () => {
   return (
@@ -9,21 +10,18 @@ const Skills = () => {
           title="Tooling"
           description="Explore the tools and libraries I use for development, including frameworks, package managers, and build tools."
           link="/tooling"
-          linkText="Learn more"
         />
 
         <SkillsCard
           title="Uses"
           description="A collection of applications, extensions, and workflows I use in my daily work as a developer."
           link="/uses"
-          linkText="Learn more"
         />
 
         <SkillsCard
           title="Timeline"
-          description="View my professional journey and key milestones, from education to work experience and major projects."
+          description="An overview of key milestones from recent years."
           link="/timeline"
-          linkText="Learn more"
         />
       </div>
     </div>

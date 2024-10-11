@@ -1,0 +1,23 @@
+@import "../styles/global";
+
+.skills-page {
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+
+  &__section {
+    padding-bottom: 3rem;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}

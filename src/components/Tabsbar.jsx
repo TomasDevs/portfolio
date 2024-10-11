@@ -19,14 +19,14 @@ const Tabsbar = () => {
             name="contact.css"
           />
           <TabsbarItem
-            to="/skills"
-            icon="/icons/icon-js.svg"
-            name="skills.ts"
-          />
-          <TabsbarItem
             to="/projects"
             icon="/icons/icon-js.svg"
             name="projects.js"
+          />
+          <TabsbarItem
+            to="/skills"
+            icon="/icons/icon-ts.svg"
+            name="skills.ts"
           />
           <TabsbarItem
             to="/articles"

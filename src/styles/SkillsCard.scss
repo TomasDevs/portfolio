@@ -1,21 +1,26 @@
 @import "../styles/global";
 
 .card {
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 1.5rem;
+  padding: 1.5rem;
   background-color: $primary-color;
   color: $text-color;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
   &__title {
-    font-size: 1.4rem;
     margin-bottom: 0.5rem;
+    font-size: 1.4rem;
   }
 
   &__description {
-    margin-bottom: 1rem;
     font-size: 1rem;
+    color: $icon-color;
   }
 
   &__link {

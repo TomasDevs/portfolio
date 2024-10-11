@@ -7,6 +7,8 @@ import Skills from "../pages/Skills";
 import Contact from "../pages/Contact";
 import Articles from "../pages/Articles";
 import Github from "../pages/Github";
+import Tooling from "../pages/Tooling";
+import Uses from "../pages/Uses";
 import "../styles/Main.scss";
 
 const Main = () => {
@@ -15,11 +17,13 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/github" element={<Github />} />
+        <Route path="/tooling" element={<Tooling />} />
+        <Route path="/uses" element={<Uses />} />
       </Routes>
     </main>
   );
