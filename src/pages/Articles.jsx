@@ -33,7 +33,16 @@ const Articles = () => {
 
   return (
     <div className="articles-page">
-      <h2 className="articles-page__title">My Articles on dev.to</h2>
+      <h2 className="articles-page__title">
+        My Articles on{" "}
+        <a
+          href="https://dev.to/tomasdevs"
+          target="_blank"
+          rel="noopener"
+          className="articles-page__link--dev">
+          dev.to
+        </a>
+      </h2>
 
       {loading ? (
         <div className="loader">

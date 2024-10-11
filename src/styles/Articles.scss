@@ -31,6 +31,25 @@
         color: $text-color;
       }
     }
+
+    &--dev {
+      color: $text-color;
+      background-image: linear-gradient(
+        120deg,
+        $highlight-color 100%,
+        $highlight-color 100%
+      );
+      background-repeat: no-repeat;
+
+      background-size: 100% 0.2em;
+      background-position: 0 88%;
+      text-decoration: none;
+      transition: background-size 0.3s ease;
+
+      &:hover {
+        background-size: 100% 1.4em;
+      }
+    }
   }
 }
 

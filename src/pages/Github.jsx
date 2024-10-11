@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import GithubCard from "../components/GithubCard";
 import "../styles/Github.scss";
 
 const Github = () => {
@@ -7,19 +8,24 @@ const Github = () => {
 
   useEffect(() => {
     const fetchRepos = async () => {
-      setLoading(true);
-      const response = await fetch(
-        "https://api.github.com/users/tomasdevs/repos"
-      );
-      const data = await response.json();
-      setRepos(data);
-      setLoading(false);
+      try {
+        setLoading(true);
+        const response = await fetch(
+          "https://api.github.com/users/tomasdevs/repos"
+        );
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setRepos(data);
+      } catch (error) {
+        console.error("Error fetching repos:", error);
+      } finally {
+        setLoading(false);
+      }
     };
 
-    fetchRepos().catch((error) => {
-      console.error("Error fetching repos:", error);
-      setLoading(false);
-    });
+    fetchRepos();
   }, []);
 
   return (
@@ -33,18 +39,7 @@ const Github = () => {
       ) : (
         <ul className="github-page__list">
           {repos.map((repo) => (
-            <li key={repo.id} className="github-page__item">
-              <a
-                href={repo.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-page__link">
-                <div className="repo-card">
-                  <h3 className="repo-card__title">{repo.name}</h3>
-                  <p className="repo-card__description">{repo.description}</p>
-                </div>
-              </a>
-            </li>
+            <GithubCard key={repo.id} repo={repo} />
           ))}
         </ul>
       )}
