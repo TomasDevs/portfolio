@@ -1,0 +1,58 @@
+@import "../styles/global";
+
+.timeline-page {
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: $icon-color;
+    }
+
+    &__event {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -0.3rem;
+        top: 0.5rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        background-color: $icon-color;
+        border-radius: 50%;
+      }
+    }
+
+    &__date {
+      font-size: 0.875rem;
+      color: $icon-color;
+      margin-bottom: 0.5rem;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+      color: $text-color;
+      margin-bottom: 0.25rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+      color: $icon-color;
+    }
+  }
+}

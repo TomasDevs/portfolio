@@ -9,6 +9,8 @@ import Articles from "../pages/Articles";
 import Github from "../pages/Github";
 import Tooling from "../pages/Tooling";
 import Uses from "../pages/Uses";
+import Timeline from "../pages/Timeline";
+
 import "../styles/Main.scss";
 
 const Main = () => {
@@ -24,6 +26,7 @@ const Main = () => {
         <Route path="/github" element={<Github />} />
         <Route path="/tooling" element={<Tooling />} />
         <Route path="/uses" element={<Uses />} />
+        <Route path="/timeline" element={<Timeline />} />
       </Routes>
     </main>
   );
