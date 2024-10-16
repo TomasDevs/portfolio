@@ -1,0 +1,91 @@
+@import "../styles/global";
+
+.settings-page {
+  padding: 2rem;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .settings-card {
+    padding: 1.5rem;
+    background-color: $secondary-color;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &__title {
+      font-size: 1.2rem;
+      color: $text-color;
+    }
+
+    &__description {
+      color: $text-color-light;
+    }
+
+    &:hover {
+      background-color: $highlight-color;
+    }
+
+    &.-active {
+      border-color: $highlight-color-secondary;
+      background-color: $highlight-color-secondary;
+
+      &__title,
+      &__description {
+        color: $text-color-light;
+      }
+    }
+  }
+}
+
+body[data-theme="light"] {
+  background-color: #eee;
+  color: $primary-color;
+
+  .titlebar,
+  .footer,
+  .sidebar,
+  .explorer-section,
+  .layout__inner,
+  .tabsbar {
+    background-color: $text-color;
+    color: $primary-color;
+  }
+
+  .card {
+    background-color: #f8f8f8;
+    border-color: #dcdcdc;
+    color: $primary-color;
+  }
+
+  .tabsbar__link {
+    &.-active {
+      background-color: $icon-color;
+      color: #ffffff;
+    }
+  }
+
+  .titlebar__menu-item,
+  .footer-list__item,
+  .explorer__name,
+  .tabsbar__link {
+    color: $primary-color;
+
+    .footer {
+      border-top: 1px solid #dcdcdc;
+    }
+
+    .settings-card.-active {
+      background-color: #ffd700;
+      color: #333;
+    }
+  }
+}
