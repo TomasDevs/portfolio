@@ -16,7 +16,7 @@
   .settings-card {
     padding: 1.5rem;
     background-color: $secondary-color;
-    border: 1px solid $border-color;
+    border: 1px solid rgba($text-color, 0.1);
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -27,21 +27,18 @@
     }
 
     &__description {
-      color: $text-color-light;
+      color: $icon-color;
     }
 
     &:hover {
-      background-color: $highlight-color;
+      background-color: $primary-color;
+      .settings-card__description {
+        color: $text-color;
+      }
     }
 
     &.-active {
-      border-color: $highlight-color-secondary;
-      background-color: $highlight-color-secondary;
-
-      &__title,
-      &__description {
-        color: $text-color-light;
-      }
+      background-color: $primary-color;
     }
   }
 }
@@ -66,13 +63,143 @@ body[data-theme="light"] {
     color: $primary-color;
   }
 
-  .tabsbar__link {
+  .sidebar__link {
+    &:hover {
+      background-color: $text-color-light;
+      color: #ffffff;
+    }
     &.-active {
-      background-color: $icon-color;
+      background-color: $text-color-light;
       color: #ffffff;
     }
   }
 
+  .tabsbar__link {
+    &:hover {
+      background-color: $text-color-light;
+    }
+    &.-active {
+      background-color: $text-color-light;
+    }
+  }
+
+  // Settings page
+  .settings-card {
+    background-color: #f8f8f8;
+    border-color: #dcdcdc;
+    color: $primary-color;
+
+    &__title {
+      color: $primary-color;
+    }
+
+    &:hover {
+      background-color: $text-color;
+      .settings-card__description {
+        color: $primary-color;
+      }
+    }
+
+    &.-active {
+      background-color: $text-color;
+      color: #ffffff;
+    }
+  }
+
+  // Explorer section
+  .explorer__arrow {
+    filter: invert(1);
+  }
+
+  // Home page
+  .home-page {
+    color: $primary-color;
+
+    .string {
+      color: $highlight-color;
+    }
+
+    .variable {
+      color: darken($color: $highlight-color, $amount: 40);
+    }
+  }
+
+  // Contact page
+  .contact-page {
+    .property {
+      color: $highlight-color;
+    }
+  }
+
+  // Projects page
+  .project-card {
+    background-color: $text-color-light;
+    color: $primary-color;
+
+    &__description {
+      color: $secondary-color;
+    }
+
+    &__links__link {
+      color: $primary-color;
+    }
+  }
+
+  // Articles page
+  .articles-page {
+    &__link {
+      background-color: $text-color-light;
+      color: $primary-color;
+      &--dev {
+        color: $primary-color;
+      }
+      &:hover {
+        background-color: $text-color;
+      }
+    }
+
+    .article-card {
+      &__title {
+        color: $secondary-color;
+      }
+
+      &__published,
+      &__meta {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Github page
+
+  .github-page {
+    &__link {
+      background-color: $text-color-light;
+      color: $primary-color;
+      &:hover {
+        background-color: $text-color;
+      }
+    }
+
+    .repo-card {
+      &__title {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Timeline page
+  .timeline {
+    &__date,
+    &__description {
+      color: $primary-color;
+    }
+    &__title {
+      color: $secondary-color;
+    }
+  }
+
+  // Other elements
   .titlebar__menu-item,
   .footer-list__item,
   .explorer__name,
