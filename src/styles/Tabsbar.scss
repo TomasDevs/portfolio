@@ -11,6 +11,22 @@
 
   &__tabs {
     overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 0.75rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $highlight-color;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: darken($highlight-color, 10%);
+      }
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $text-color;
+    }
   }
 
   &__link {
