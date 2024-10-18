@@ -11,6 +11,7 @@ import Tooling from "../pages/Tooling";
 import Uses from "../pages/Uses";
 import Timeline from "../pages/Timeline";
 import Settings from "../pages/Settings";
+import NotFound from "../pages/NotFound";
 
 import "../styles/Main.scss";
 
@@ -29,6 +30,7 @@ const Main = () => {
         <Route path="/uses" element={<Uses />} />
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
   );
