@@ -35,9 +35,8 @@ const About = () => {
           <span className="element">section</span>&gt; {"\n"}
           <span className="line-number">13</span>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;
-          <span className="element">p</span>&gt;Hi, I'm Tomas Stveracek.
-          Frontend Web Developer.&lt;/<span className="element">p</span>&gt;{" "}
-          {"\n"}
+          <span className="element">p</span>&gt;Hi, I'm Tomas 😊. Frontend Web
+          Developer 💻.&lt;/<span className="element">p</span>&gt; {"\n"}
           <span className="line-number">14</span>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;
           <span className="element">p</span>&gt;In my free time, I enjoy

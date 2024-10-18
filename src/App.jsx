@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Titlebar from "./components/TitleBar";
 import Footer from "./components/Footer";
 import Layout from "./components/Layout";
+import MobileWarning from "./components/MobileWarning";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Titlebar />
       <Layout />
       <Footer />
+      <MobileWarning />
     </Router>
   );
 };
