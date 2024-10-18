@@ -37,10 +37,10 @@
       .article-card__title {
         color: $text-color;
       }
+    }
 
-      @media (min-width: 1200px) {
-        padding: 1.5rem;
-      }
+    @media (min-width: 1200px) {
+      padding: 1.5rem;
     }
 
     &--dev {
