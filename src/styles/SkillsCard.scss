@@ -1,13 +1,17 @@
 @import "../styles/global";
 
 .card {
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: $primary-color;
   color: $text-color;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+
+  @media (min-width: 1200px) {
+    padding: 1.5rem;
+  }
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -21,7 +25,7 @@
 
   &__title {
     margin-bottom: 0.5rem;
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
   }
 
   &__description {

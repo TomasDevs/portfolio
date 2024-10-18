@@ -2,14 +2,21 @@
 
 .github-page {
   &__title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 1.5rem;
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    @media (min-width: 1200px) {
+      gap: 2rem;
+    }
   }
 
   &__item {
@@ -19,7 +26,7 @@
   &__link {
     display: flex;
     flex: 1;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: $primary-color;
     color: $text-color;
     text-decoration: none;
@@ -32,12 +39,15 @@
         color: $text-color;
       }
     }
+    @media (min-width: 1200px) {
+      padding: 1.5rem;
+    }
   }
 }
 
 .repo-card {
   &__title {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     margin-bottom: 0.5rem;
     color: $highlight-color;
   }

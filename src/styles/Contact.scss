@@ -1,6 +1,10 @@
 .contact-page {
-  font-size: 1.4rem;
+  font-size: clamp(0.75rem, 1.8vw, 1.4rem);
   line-height: 1.6;
+
+  pre {
+    white-space: pre-line;
+  }
 }
 
 .line-number {

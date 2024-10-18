@@ -36,12 +36,12 @@ const About = () => {
           <span className="line-number">13</span>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;
           <span className="element">p</span>&gt;Hi, I'm Tomas Stveracek.
-          Frontend Web Developer experienced in HTML, CSS, JavaScript and
-          React.&lt;/<span className="element">p</span>&gt; {"\n"}
+          Frontend Web Developer.&lt;/<span className="element">p</span>&gt;{" "}
+          {"\n"}
           <span className="line-number">14</span>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;
           <span className="element">p</span>&gt;In my free time, I enjoy
-          cycling, hiking, walking, bikepacking, coffee and traveling.&lt;/
+          cycling, hiking, bikepacking, coffee and traveling.&lt;/
           <span className="element">p</span>&gt; {"\n"}
           <span className="line-number">15</span> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/
           <span className="element">section</span>&gt; {"\n"}

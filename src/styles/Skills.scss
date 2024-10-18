@@ -2,14 +2,21 @@
 
 .skills-page {
   &__title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 1.5rem;
   }
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    @media (min-width: 1200px) {
+      gap: 2rem;
+    }
   }
 
   &__section {

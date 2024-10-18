@@ -1,13 +1,14 @@
 @import "../styles/global";
 
 .home-page {
-  font-size: 1.4rem;
+  font-size: clamp(0.75rem, 1.8vw, 1.4rem);
   color: #f8f8f2;
   border-radius: 8px;
 
   pre {
     margin: 0;
     line-height: 1.6;
+    white-space: pre-line;
   }
 }
 
