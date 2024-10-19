@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Titlebar from "./components/TitleBar";
+import Titlebar from "./components/Titlebar";
 import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 import MobileWarning from "./components/MobileWarning";
