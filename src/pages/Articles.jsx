@@ -13,9 +13,12 @@ const Articles = () => {
         setLoading(true);
         const response = await fetch(
           process.env.NODE_ENV === "production"
-            ? `https://dev.to/api/articles/me/published?api-key=${process.env.REACT_APP_DEV_TO_API_KEY}`
+            ? `https://dev.to/api/articles/me/published?api-key=${
+                import.meta.env.VITE_DEV_TO_API_KEY
+              }`
             : `/api/fetchArticles`
         );
+
         if (!response.ok) {
           throw new Error("Failed to fetch articles");
         }
