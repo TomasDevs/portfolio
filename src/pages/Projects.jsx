@@ -9,7 +9,11 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("/public/api/projects.json");
+        const isProduction = process.env.NODE_ENV === "production";
+        const response = await fetch(
+          isProduction ? "/api/projects.json" : "/public/api/projects.json"
+        );
+
         if (!response.ok) {
           throw new Error("Failed to fetch projects");
         }
