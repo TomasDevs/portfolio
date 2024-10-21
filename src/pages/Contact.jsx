@@ -31,12 +31,6 @@ const Contact = () => {
             https://github.com/tomasdevs
           </a>
           ; {"\n"}
-          <span className="line-number">5</span> &nbsp;&nbsp;
-          <span className="property">linkedin</span>:{" "}
-          <a href="https://linkedin.com/in/username" className="value">
-            https://linkedin.com/in/username
-          </a>
-          ; {"\n"}
           <span className="line-number">6</span> &nbsp;&nbsp;
           <span className="property">polywork</span>:{" "}
           <a href="https://polywork.com/tomas_stveracek" className="value">
