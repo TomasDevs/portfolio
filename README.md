@@ -8,7 +8,7 @@ This is my personal portfolio built to showcase my skills, projects, and article
 - **Dark/Light Mode**: Toggle between dark and light themes, with preferences saved in local storage.
 - **Responsive Design**: Optimized for desktop and mobile devices (best viewed on desktop).
 - **Interactive Pages**: Displays various sections including About, Skills, Projects, and more.
-- **Dynamic Content**: Articles and GitHub repositories fetched via APIs through a custom Express proxy server.
+- **Dynamic Content**: Articles and GitHub repositories fetched via APIs through a custom Express proxy server and Netlify serverless functions.
 - **404 Page**: Custom 404 page for any invalid URLs.
 
 ## 🛠️ Technologies Used
@@ -40,18 +40,25 @@ To run this project locally, follow these steps:
 2. Install dependencies for both the main project and the API:
 
    ```bash
-    npm install
-    cd api
-    npm install
+   # Install frontend dependencies
+   npm install
+
+   # Navigate to the api directory and install backend dependencies
+   cd api
+   npm install
    ```
 
 3. Create a .env file in the api directory and add your Dev.to API key:
 
    ```makefile
-    REACT_APP_DEV_TO_API_KEY=your_api_key_here
+    VITE_DEV_TO_API_KEY=your_api_key_here
    ```
 
-4. Start the Express server for handling API requests:
+4. Set up environment variables on Netlify for production:
+
+   Go to your Netlify dashboard, navigate to the site settings, and add the same `VITE_DEV_TO_API_KEY` with your Dev.to API key under Environment Variables.
+
+5. Start the Express server for handling API requests:
 
    ```bash
     cd api
@@ -60,13 +67,13 @@ To run this project locally, follow these steps:
 
    The server will run on http://localhost:5000.
 
-5. Start the Vite development server:
+6. Start the Vite development server:
 
    ```bash
     npm run dev
    ```
 
-6. Open your browser and navigate to:
+7. Open your browser and navigate to:
    http://localhost:5173
 
 ## 📂 Project Structure
@@ -78,6 +85,9 @@ portfolio-vscode/
 │   ├── server.js             # Express server for API requests
 │   ├── package.json          # API dependencies
 │   └── package-lock.json     # Lockfile for the API dependencies
+├── netlify/
+│   └── functions/
+│       └── fetchArticles.js  # Serverless function for fetching articles
 ├── public/
 │   ├── api/
 │   │   └── projects.json     # JSON data for projects
@@ -94,6 +104,7 @@ portfolio-vscode/
 ├── .gitignore                # Files and directories to ignore in version control
 ├── .eslintrc.js              # ESLint configuration
 ├── LICENSE                   # License for the project
+├── netlify.toml              # Netlify configuration for redirects and functions
 ├── package.json              # Project dependencies and scripts
 ├── package-lock.json         # Lockfile for the project dependencies
 ├── vite.config.js            # Vite configuration
