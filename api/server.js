@@ -13,7 +13,7 @@ app.get("/api/fetchArticles", async (req, res) => {
   try {
     const response = await fetch("https://dev.to/api/articles/me/published", {
       headers: {
-        "api-key": process.env.REACT_APP_DEV_TO_API_KEY,
+        "api-key": process.env.VITE_DEV_TO_API_KEY,
       },
     });
 

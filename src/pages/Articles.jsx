@@ -11,27 +11,27 @@ const Articles = () => {
     const fetchArticles = async () => {
       try {
         setLoading(true);
-        const response = await fetch(
-          process.env.NODE_ENV === "production"
-            ? `https://dev.to/api/articles/me/published?api-key=${
-                import.meta.env.VITE_DEV_TO_API_KEY
-              }`
-            : `/api/fetchArticles`,
-          {
-            headers: {
-              "User-Agent":
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-            },
-          }
-        );
+        const apiUrl =
+          import.meta.env.MODE === "production"
+            ? "https://dev.to/api/articles/me/published"
+            : "http://localhost:5000/api/fetchArticles";
+
+        const response = await fetch(apiUrl, {
+          headers: {
+            "api-key": import.meta.env.VITE_DEV_TO_API_KEY,
+          },
+        });
 
         if (!response.ok) {
           throw new Error("Failed to fetch articles");
         }
+
         const data = await response.json();
-        setArticles(data);
+
+        setArticles(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error("Error fetching articles:", error);
+        setArticles([]);
       } finally {
         setLoading(false);
       }
