@@ -11,6 +11,10 @@ const Articles = () => {
     const fetchArticles = async () => {
       try {
         setLoading(true);
+        console.log(
+          "API Key in Production:",
+          import.meta.env.VITE_DEV_TO_API_KEY
+        );
         const response = await fetch(
           process.env.NODE_ENV === "production"
             ? `https://dev.to/api/articles/me/published?api-key=${
