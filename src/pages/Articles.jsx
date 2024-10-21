@@ -13,7 +13,7 @@ const Articles = () => {
         setLoading(true);
         const apiUrl =
           import.meta.env.MODE === "production"
-            ? "https://dev.to/api/articles/me/published"
+            ? "/.netlify/functions/fetchArticles"
             : "http://localhost:5000/api/fetchArticles";
 
         const response = await fetch(apiUrl, {
